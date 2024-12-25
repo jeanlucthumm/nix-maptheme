@@ -1,5 +1,5 @@
 {
-  description = "A resusable NixOS module system for mapping base16/24 colors to program-specific configurations";
+  description = "A resusable NixOS module system for mapping base16 colors to program-specific configurations";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
