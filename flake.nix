@@ -26,6 +26,6 @@
       }
     )
     // {
-      nixosModules.maptheme = ./maptheme/nixos;
+      nixosModules.maptheme = ./modules/nixos;
     };
 }
