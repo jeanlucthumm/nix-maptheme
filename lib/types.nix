@@ -70,6 +70,30 @@ in {
           type = lib.types.str;
           check = isValidHexColor;
         };
+        red = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
+        green = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
+        yellow = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
+        blue = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
+        cyan = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
+        magenta = lib.mkOption {
+          type = lib.types.str;
+          check = isValidHexColor;
+        };
       };
     });
   };
