@@ -22,22 +22,22 @@ in {
 
   config = lib.mkIf config.maptheme.console.enable {
     console.colors = with config.maptheme.console.colors; [
-      base00 # black
-      base08 # red
-      base0B # green
-      base0A # yellow
-      base0D # blue
-      base0E # magenta
-      base0C # cyan
-      base05 # white
-      base03 # bright black
-      base08 # bright red
-      base0B # bright green
-      base0A # bright yellow
-      base0D # bright blue
-      base0E # bright magenta
-      base0C # bright cyan
-      base07 # bright white
+      base00
+      red
+      green
+      yellow
+      blue
+      magenta
+      cyan
+      base05
+      base03
+      red
+      green
+      yellow
+      blue
+      magenta
+      cyan
+      base06
     ];
   };
 }
