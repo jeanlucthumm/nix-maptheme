@@ -1,6 +1,6 @@
 {lib, ...}: {
   types = {
-    base16SchemeType = lib.types.attrsOf (lib.types.submodule {
+    base16SchemeType = lib.types.submodule {
       options = {
         base00 = lib.mkOption {
           type = lib.types.str;
@@ -69,6 +69,6 @@
           type = lib.types.str;
         };
       };
-    });
+    };
   };
 }
