@@ -27,5 +27,6 @@
     )
     // {
       nixosModules.maptheme = ./modules/nixos;
+      darwinModules.maptheme = ./modules/darwin;
     };
 }
