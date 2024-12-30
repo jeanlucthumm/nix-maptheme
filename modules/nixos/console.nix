@@ -7,17 +7,7 @@
 in {
   options.maptheme.console = {
     enable = lib.mkEnableOption "console colors";
-    colors = lib.mkOption {
-      type = slib.types.base16SchemeType;
-      description = "base16 color scheme without '#'";
-      example = ''
-        {
-          base00 = '00ff22';
-          base01 = '3547f8';
-          # ...
-        }
-      '';
-    };
+    colors = slib.options.base16option;
   };
 
   config = lib.mkIf config.maptheme.console.enable {
