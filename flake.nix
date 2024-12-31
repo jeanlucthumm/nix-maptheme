@@ -26,7 +26,8 @@
       }
     )
     // {
-      nixosModules.maptheme = ./modules/nixos;
-      darwinModules.maptheme = ./modules/darwin;
+      nixosModules.maptheme = import ./modules/core/nixos.nix ./modules/core/home-manager.nix;
+      darwinModules.maptheme = import ./modules/core/darwin.nix ./modules/core/home-manager.nix;
+      homeManagerModules.maptheme = import ./modules/core/home-manager.nix;
     };
 }
