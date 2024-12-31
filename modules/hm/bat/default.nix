@@ -12,8 +12,6 @@ in {
 
   config = lib.mkIf config.maptheme.bat.enable {
     programs.bat = {
-      # This theme is reused for yazi. Changes to the template
-      # will need to be applied to modules/yazi/hm.nix
       themes."base16-maptheme".src = config.maptheme.bat.colors {
         template = ./base16-maptheme.mustache;
         extension = ".tmTheme";
