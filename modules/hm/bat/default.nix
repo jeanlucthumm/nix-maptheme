@@ -3,7 +3,7 @@
   lib,
   ...
 }: let
-  slib = import ../../lib/types.nix {inherit lib;};
+  slib = import ../../../lib/types.nix {inherit lib;};
 in {
   options.maptheme.bat = {
     enable = lib.mkEnableOption "bat colors";
